@@ -1,0 +1,395 @@
+#mushroom1_container {
+  animation-name: mushroom1_container;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes mushroom1_container {
+  0% {
+    transform: translate(-800%, 200%);
+  }
+  25% {
+    transform: translate(-200%,300%);
+  }
+  50% {
+    transform: translate(-180%,200%);
+  }
+  75% {
+    transform: translate(230%, 200%);
+  }
+  100% {
+    transform: translate(200%,0%);
+  }
+}
+
+#mushroom1 {
+  animation-name: mushroom1;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mushroom1 {
+  0% {
+    transform: rotate(90deg);
+  }
+  25%{
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  75%{
+    transform: scale(1.0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#mushroom2_container {
+  animation-name: mushroom2_container;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes mushroom2_container {
+  0% {
+    transform: translate(-300%, 75%);
+  }
+  25% {
+    transform: translate(-50%,200%);
+  }
+  50% {
+    transform: translate(-175%,600%);
+  }
+  75% {
+    transform: translate(230%, 600%);
+  }
+  100%{
+    transform: translate(400%,75%)
+  }
+}
+
+#mushroom2 {
+  animation-name: mushroom2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mushroom2 {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+#mushroom2 {
+  animation-name: mushroom2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mushroom2 {
+    0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#mushroom3_container {
+  animation-name: mushroom3_container;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes mushroom3_container {
+  0% {
+    transform: translate(800%, -200%);
+  }
+  50% {
+    transform: translate(-180%,200%);
+  }
+  100% {
+    transform: translate(200%,0%);
+  }
+}
+
+#mushroom3 {
+  animation-name: mushroom3;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mushroom3 {
+    0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#mushroom4_container {
+  animation-name: mushroom4_container;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes mushroom4_container {
+  0% {
+    transform: translate(450%, -200%);
+  }
+  50% {
+    transform: translate(-900%,10%);
+  }
+  100% {
+    transform: translate(900%,40%);
+  }
+  
+}
+
+#mushroom4 {
+  animation-name: mushroom4;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mushroom4 {
+    0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#book2_container{
+    animation-name:book2_container ;
+    animation-duration: 3s ;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes book2_container {
+  0% {
+    transform: translate(800%, -200%);
+  }
+  50% {
+    transform: translate(-900%,10%);
+  }
+  100% {
+    transform: translate(-200%,-100%);
+  }
+  
+}
+
+#book2 {
+  animation-name: book2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes book2 {
+    0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+#book3_container{
+    animation-name:book3_container ;
+    animation-duration: 3s ;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes book3_container {
+  0% {
+    transform: translate(400%, -200%);
+  }
+  50% {
+    transform: translate(-900%,10%);
+  }
+  100% {
+    transform: translate(-200%,-100%);
+  }
+  
+}
+
+#book3 {
+  animation-name: book3;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes book3 {
+    0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+#book4_container{
+    animation-name:book2_container ;
+    animation-duration: 3s ;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes book4_container {
+  0% {
+    transform: translate(800%, -200%);
+  }
+  50% {
+    transform: translate(-900%,10%);
+  }
+  100% {
+    transform: translate(-200%,-100%);
+  }
+  
+}
+
+#book4 {
+  animation-name: book2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes book4 {
+    0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+#book5_container{
+    animation-name:book5_container ;
+    animation-duration: 3s ;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes book5_container {
+  0% {
+    transform: translate(-300%, 75%);
+  }
+  25% {
+    transform: translate(-50%,200%);
+  }
+  50% {
+    transform: translate(-175%,600%);
+  }
+  75% {
+    transform: translate(230%, 600%);
+  }
+  100%{
+    transform: translate(400%,75%)
+  }
+  
+}
+
+#book5 {
+  animation-name: book2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes book5 {
+    0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -29,7 +29,7 @@ img {
 
 #game_background {
     grid-area: 1 / 1;
-    background-image:url('../img/Background.jpg');
+
     background-size: cover;
 }
 #game_elements {
@@ -40,41 +40,68 @@ img {
 
 /* spil elementer */
 
-#mushroom1_container {
+#mushroom1 {
     width: 13%;
     position: absolute;
     top: 18%;
     left: 37%;
 }
 
-#mushroom2_container {
+#mushroom2 {
     width: 11%;
     position: absolute;
     top: 72%;
     left: 73%;
 }
 
-#mushroom3_container {
+#mushroom3 {
     width: 17%;
     position: absolute;
     top: 44%;
     left: 48%;
 }
 
-#mushroom4_container {
+#mushroom4 {
+    width: 13%;
+    position: absolute;
+    top: 18%;
+    left: 45%;
+}
+
+#mushroom5 {
     width: 20%;
     position: absolute;
     top: 18%;
     left: 18%;
 }
 
-#game_foreground {
-    grid-area: 1 / 1;
-    background-image: url(svg/forgrund.svg);
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
+#mushroom6 {
+    width: 20%;
+    position: absolute;
+    top: 18%;
+    left: 18%;
 }
+#book2 {
+    width: 2%;
+    position: absolute;
+    top: 18%;
+    left: 18%;
+}
+
+#book3 {
+    width: 10%;
+    position: absolute;
+    top: 18%;
+    left: 18%;
+}
+
+#book4 {
+    width: 2%;
+    position: absolute;
+    top: 18%;
+    left: 18%;
+}
+
 
 #game_ui {
     grid-area: 1 / 1;
@@ -83,20 +110,9 @@ img {
 
 /* ui-elementer */
 #time_board {
-    width: 5.6%;
+    width: 3%;
     position: absolute;
     top: 66.5%;
     left: 4%;
 }
-#score_board {
-    width: 23%;
-    position: absolute;
-    top: 69%;
-    left: 11%;
-}
-#energy_board {
-    width: 26%;
-    position: absolute;
-    top: 83%;
-    left: 3%;
-}
+

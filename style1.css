@@ -1,0 +1,91 @@
+body{
+    margin: 0%;
+}
+img {
+    width: 100%;
+}
+
+#screen {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
+}
+
+#background {
+    grid-area: 1/1;
+    background-image: url(images/background.png);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#mushroom1_container{
+    width: 12%;
+    position:absolute;
+    top: 10%;
+    left: 50%;
+}
+#mushroom2_container{
+    width: 10%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+#mushroom3_container{
+    width: 12%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+#mushroom4_container{
+    width: 12%;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+
+}
+#book2_container{
+    width: 10%;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+
+}
+
+#book3_container{
+    width: 10% ;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+#book4_container{
+    width: 9%;
+    position: absolute;
+    top:80% ;
+    left: 20%;
+}
+
+#book5_container{
+    width: 12%;
+    position: absolute;
+    top: 35%;
+    left: 42%;
+}
+#game_ui {
+    grid-area: 1 / 1;
+    position: relative;
+}
+
+/* ui-elementer */
+#time_board {
+    width: 3%;
+    position: absolute;
+    top: 66.5%;
+    left: 4%;
+}
