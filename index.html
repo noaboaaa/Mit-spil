@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css">
     <title>clicker spil</title>
 </head>
 
@@ -13,16 +12,24 @@
     <div id="screen">
         <div id="game">
             <div id="background"></div>
-            <div id="gamel_elements">
+            <div id="game_elements">
                 <div id="mushroom1_container">
                  <img id="mushroom1" src="../images/mushroom1.png" alt="mushroom1"> 
                 </div>
                 <div id="mushroom2_container">
                  <img id="mushroom2" src="../images/mushroom2.png" alt="mushroom2">  
                 </div>
-            
+                <div id="mushroom3_container">
+                 <img id="mushroom3" src="../images/mushroom3.png" alt="mushroom3">  
+                </div>
                 <div id="mushroom4_container">
                  <img id="mushroom4" src="../images/mushroom4.png" alt="mushroom4">  
+                </div>
+                <div id="mushroom5_container">
+                 <img id="mushroom5" src="../images/mushroom5.png" alt="mushroom3">  
+                </div>
+                <div id="book1_container">
+                    <img id="book1" src="../images/book1.png" alt="book1"> 
                 </div>
                 <div id="book2_container">
                     <img id="book2" src="../images/book2.png" alt="book2"> 
@@ -32,14 +39,51 @@
                 </div>
             </div>
 
-        <div id="game_ui">
-  <img id="timeboard" src="../images/timeboard.png">          
-        </div> 
+    <div id="game_ui">
+        <div id="score_board"> 
+            <span id="point_count">0</span>
+            <img  id="point_image" src="images/point.png">
         </div>
-<div id="start"></div>
-<div id="game_over"></div>
-<div id="game_complete"></div>
+          <div id="life_board">
+            <img id="heart1" src="images/heart.png" class="active_heart">
+            <img id="heart2" src="images/heart.png" class="active_heart">
+            <img id="heart3" src="images/heart.png" class="active_heart">
+        </div>
+            <div id="time_board">
+                <div id="time_container">
+                    <div id="time" class=""></div>
+                </div>
+            </div>
     </div>
+    </div> 
+ <div id="start">
+        <h2>Mushroom vs Knowledge</h2>
+        <p> Collect 10 mushrooms before the time runs out</p>
+        <p> You lose one life everytime you click on a book </p>
+        <p> Stay ignorant and good luck<3 </p>
+
+        <button id="btn_start" class="pulse">Start</button>
+     </div>
+
+<div id="start" class="hidden"></div>
+
+        <div id="game_over" class="hidden">
+            <h2>Game Over</h2>
+            <button id="try_again" class="pulse">Wanna try again?</button>
+        </div>
+        <div id="level_complete" class="hidden">
+              <h2>Level Complete</h2>
+    <p>Congratulations! You have successfully become blissfully ignorant</p>
+            <button id="try_again1" class="pulse">Wanna try again?</button>
+        </div>
+    </div> 
+
+<audio id="start_sound" src="sounds/start_sound.mp3"></audio>
+<audio id="background_sound" src="sounds/background_sound.mp3"></audio>
+<audio id="good" src="sounds/good.mp3"></audio>
+<audio id="bad" src="sounds/bad.mp3"></audio>
+
+
     <script src="script.js"></script>
 </body>
 </html>
