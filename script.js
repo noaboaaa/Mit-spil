@@ -3,7 +3,7 @@ window.addEventListener("load", ready);
 
 //globale variabler
 let points = 0;
-let lives = 0;
+let lives = 3;
 
 function ready() {
     console.log("JavaScript ready!");
@@ -13,11 +13,13 @@ function ready() {
 }
 
 function startGame() {
-// point og liv nulstilles 
-  points = 0;
-  lives = 3;
-  //document.querySelector("#start_lyd").play();
-  //document.querySelector("#background_lyd").play();
+  console.log("JavaScript kører!");
+  document.querySelector("#start_sound").play();
+  document.querySelector("#background_sound").play();
+   resetTimer();
+   resetLives();
+   resetPoint();
+   startTimer();
 
 // startskærm skjules 
 document.querySelector("#start").classList.add("hidden");
@@ -25,60 +27,59 @@ document.querySelector("#game_over").classList.add("hidden");
 document.querySelector("#level_complete").classList.add("hidden");
 
 // start alle animationer
-document.querySelector("#mushroom1_container").classList.add("flying");
-document.querySelector("#mushroom2_container").classList.add("flying");
-document.querySelector("#mushroom3_container").classList.add("flying");
-document.querySelector("#book1_container").classList.add("flying");
-document.querySelector("#book2_container").classList.add("flying");
+document.querySelector("#mushroom1_container").classList.add("flyingm1");
+document.querySelector("#mushroom2_container").classList.add("flyingm2");
+document.querySelector("#mushroom3_container").classList.add("flyingm3");
+document.querySelector("#mushroom4_container").classList.add("flyingm4");
+document.querySelector("#mushroom5_container").classList.add("flyingm5");
+document.querySelector("#book1_container").classList.add("flyingb1");
+document.querySelector("#book2_container").classList.add("flyingb2");
+document.querySelector("#book3_container").classList.add("flyingb3");
 
-// indsæt poitions klasser
-document.querySelector("#mushroom1_container").classList.add("position1");
-document.querySelector("#mushroom2_container").classList.add("position2");
-document.querySelector("#mushroom3_container").classList.add("position3");
-document.querySelector("#book1_container").classList.add("position4");
-document.querySelector("#book2_container").classList.add("position5");
+
 
 // Registrer click 
 document.querySelector("#mushroom1_container").addEventListener("click", clickMushroom1);
 document.querySelector("#mushroom2_container").addEventListener("click", clickMushroom2);
 document.querySelector("#mushroom3_container").addEventListener("click", clickMushroom3);
+document.querySelector("#mushroom4_container").addEventListener("click", clickMushroom4);
+document.querySelector("#mushroom5_container").addEventListener("click", clickMushroom5);
 document.querySelector("#book1_container").addEventListener("click", clickBook1);
 document.querySelector("#book2_container").addEventListener("click", clickBook2);
+document.querySelector("#book3_container").addEventListener("click", clickBook3);
+}
+
+function resetLives() {
+  lives = 3;
+  document.querySelector("#life1").classList.remove("broken_life");
+  document.querySelector("#life2").classList.remove("broken_life");
+  document.querySelector("#life3").classList.remove("broken_life");
+  document.querySelector("#life1").classList.add("active_life");
+  document.querySelector("#life2").classList.add("active_life");
+  document.querySelector("#life3").classList.add("active_life");
+}
+
+function resetPoint() {
+  points = 0;
+  displayPoints();
 }
 
 
 
-function clickMushroom1(){
-
-    document.querySelector("#mushroom1_container").removeEventListener("click",clickMushroom1)
-    document.querySelector("#mushroom1_container").classList.add("paused");
-    document.querySelector("#mushroom1").classList.add("zoom_out");
-    document.querySelector("#mushroom1_container").addEventListener("animationend", Mushroom1Gone);
-    incrementPoints();
-    displayPoints();
-}
-
-function clickMushroom2(){
-
-    document.querySelector("#mushroom2_container").removeEventListener("click",clickMushroom2)
-    document.querySelector("#mushroom2_container").classList.add("paused");
-    document.querySelector("#mushroom2").classList.add("zoom_out");
-    document.querySelector("#mushroom2_container").addEventListener("animationend", Mushroom2Gone);
-    incrementPoints();
-    displayPoints();
-
-}
 
 
-function clickMushroom3(){
 
-    document.querySelector("#mushroom3_container").removeEventListener("click",clickMushroom3)
-    document.querySelector("#mushroom3_container").classList.add("paused");
-    document.querySelector("#mushroom3").classList.add("zoom_out");
-    document.querySelector("#mushroom3_container").addEventListener("animationend", Mushroom3Gone);
-    incrementPoints();
-    displayPoints();
-}
+
+
+
+
+
+
+
+
+
+
+
 
 // clickBook
 
