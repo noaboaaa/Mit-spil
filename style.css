@@ -40,13 +40,13 @@ p {
      position: relative;
 }
 
-/* element positions*/
+/* mushroom/book positions*/
 
 #mushroom1_container{
     position: absolute;
-    width: 20%;
-    top:-20vw;
-    left: 10vw;
+    width: 50%;
+    top:-30vw;
+    left: 40vw;
     z-index: 4;
     animation-delay: 1s;
 }
@@ -608,7 +608,7 @@ button {
 
 .shrink {
     animation-name: shrink_kf;
-    animation-duration: 54s;
+    animation-duration: 48s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-fill-mode: forwards;

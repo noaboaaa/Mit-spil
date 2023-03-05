@@ -40,7 +40,7 @@ document.querySelector("#mushroom1_container").addEventListener("click", clickMu
 document.querySelector("#mushroom2_container").addEventListener("click", clickMushroom2);
 document.querySelector("#mushroom3_container").addEventListener("click", clickMushroom3);
 document.querySelector("#mushroom4_container").addEventListener("click", clickMushroom4);
-document.querySelector("#mushroom5_container").addEventListener("click", clickMushroom5);
+document.querySelector("#mushroom5_container").addEventListener("click", clickmushroom5);
 document.querySelector("#book1_container").addEventListener("click", clickbook1);
 document.querySelector("#book2_container").addEventListener("click", clickbook2);
 document.querySelector("#book3_container").addEventListener("click", clickbook3);
@@ -63,49 +63,59 @@ function resetPoint() {
 
 function clickMushroom1(){
  
-  decument.querySelector("#mushroom1_container").removeEventListener("click, clickMushroom1");
+  document.querySelector("#mushroom1_container").removeEventListener("click", clickMushroom1);
   document.querySelector("#mushroom1_container").classList.add("paused");
   document.querySelector("#mushroom1").classList.add("zoom_in");
   document.querySelector("#mushroom1_container").addEventListener("animationend", mushroom1Gone);
+  document.querySelector("#good").currentTime =0;
+  document.querySelector("#good").play();
   incrementPoints();
   displayPoints();
 }
 
 function clickMushroom2(){
  
-  decument.querySelector("#mushroom2_container").removeEventListener("click, clickMushroom2");
+  document.querySelector("#mushroom2_container").removeEventListener("click", clickMushroom2);
   document.querySelector("#mushroom2_container").classList.add("paused");
   document.querySelector("#mushroom2").classList.add("zoom_in");
   document.querySelector("#mushroom2_container").addEventListener("animationend", mushroom2Gone);
+  document.querySelector("#good").currentTime = 0;
+  document.querySelector("#good").play();
   incrementPoints();
   displayPoints();
 }
 
 function clickMushroom3(){
  
-  decument.querySelector("#mushroom3_container").removeEventListener("click, clickMushroom3");
+  document.querySelector("#mushroom3_container").removeEventListener("click", clickMushroom3);
   document.querySelector("#mushroom3_container").classList.add("paused");
   document.querySelector("#mushroom3").classList.add("zoom_in");
   document.querySelector("#mushroom3_container").addEventListener("animationend", mushroom3Gone);
+  document.querySelector("#good").currentTime =0;
+  document.querySelector("#good").play();
   incrementPoints();
   displayPoints();
 }
 
 function clickMushroom4(){
-  decument.querySelector("#mushroom4_container").removeEventListener("click, clickmushroom4");
+  document.querySelector("#mushroom4_container").removeEventListener("click", clickMushroom4);
   document.querySelector("#mushroom4_container").classList.add("paused");
   document.querySelector("#mushroom4").classList.add("zoom_in");
   document.querySelector("#mushroom4_container").addEventListener("animationend", mushroom4Gone);
+  document.querySelector("#good").currentTime = 0;
+  document.querySelector("#good").play();
   incrementPoints();
   displayPoints();
 }
 
 function clickmushroom5(){
  
-  decument.querySelector("#mushroom5_container").removeEventListener("click, clickMushroom5");
+  document.querySelector("#mushroom5_container").removeEventListener("click", clickmushroom5);
   document.querySelector("#mushroom5_container").classList.add("paused");
   document.querySelector("#mushroom5").classList.add("zoom_in");
   document.querySelector("#mushroom5_container").addEventListener("animationend", mushroom5Gone);
+  document.querySelector("#good").currentTime = 0;
+  document.querySelector("#good").play();
   incrementPoints();
   displayPoints();
 }
@@ -113,10 +123,12 @@ function clickmushroom5(){
 
 function clickbook1(){
  
-  decument.querySelector("#book1_container").removeEventListener("click, clickBook1");
+  document.querySelector("#book1_container").removeEventListener("click", clickbook1);
   document.querySelector("#book1_container").classList.add("paused");
   document.querySelector("#book1").classList.add("zoom_out");
-  document.querySelector("#book1_container").addEventListener("animationend", Book1Gone);
+  document.querySelector("#book1_container").addEventListener("animationend", book1Gone);
+  document.querySelector("#bad").currentTime = 0;
+  document.querySelector("#bad").play();
   decrementLives();
   displayLives();
   decrementPoints();
@@ -125,10 +137,12 @@ function clickbook1(){
 
 function clickbook2(){
  
-  decument.querySelector("#book2_container").removeEventListener("click, clickBook2");
+  document.querySelector("#book2_container").removeEventListener("click", clickbook2);
   document.querySelector("#book2_container").classList.add("paused");
   document.querySelector("#book2").classList.add("zoom_out");
-  document.querySelector("#book2_container").addEventListener("animationend", Book2Gone);
+  document.querySelector("#book2_container").addEventListener("animationend", book2Gone);
+  document.querySelector("#bad").currentTime = 0;
+  document.querySelector("#bad").play();
   decrementLives();
   displayLives();
   decrementPoints();
@@ -137,10 +151,12 @@ function clickbook2(){
 
 function clickbook3(){
  
-  decument.querySelector("#book3_container").removeEventListener("click, clickBook3");
+  document.querySelector("#book3_container").removeEventListener("click", clickbook3);
   document.querySelector("#book3_container").classList.add("paused");
   document.querySelector("#book3").classList.add("zoom_out");
-  document.querySelector("#book3_container").addEventListener("animationend", Book3Gone);
+  document.querySelector("#book3_container").addEventListener("animationend", book3Gone);
+  document.querySelector("#bad").currentTime = 0;
+  document.querySelector("#bad").play();
   decrementLives();
   displayLives();
   decrementPoints();
@@ -151,7 +167,7 @@ function clickbook3(){
 
 function decrementLives() {
   if (lives <= 1) {
-    console.log("tabt");
+    console.log("lost");
     displaygameOver();
   }
   displayDecrementedLives();
@@ -187,7 +203,7 @@ function decrementPoints() {
 // fjern animationer og gør det muligt at klikke på dem igen 
 
 function mushroom1Gone() {
-  document.querySelector("#mushroom1_container").removeEventListener("animationend", Mushroom1Gone);
+  document.querySelector("#mushroom1_container").removeEventListener("animationend", mushroom1Gone);
   document.querySelector("#mushroom1").classList.remove("zoom_in");
   document.querySelector("#mushroom1_container").classList.remove("paused");
   document.querySelector("#mushroom1_container").classList.remove("flyingm1");
@@ -198,7 +214,7 @@ function mushroom1Gone() {
 
 
 function mushroom2Gone() {
-  document.querySelector("#mushroom2_container").removeEventListener("animationend", Mushroom2Gone);
+  document.querySelector("#mushroom2_container").removeEventListener("animationend", mushroom2Gone);
   document.querySelector("#mushroom2").classList.remove("zoom_in");
   document.querySelector("#mushroom2_container").classList.remove("paused");
   document.querySelector("#mushroom2_container").classList.remove("flyingm2");
@@ -209,7 +225,7 @@ function mushroom2Gone() {
 
 
 function mushroom3Gone() {
-  document.querySelector("#mushroom3_container").removeEventListener("animationend", Mushroom3Gone);
+  document.querySelector("#mushroom3_container").removeEventListener("animationend", mushroom3Gone);
   document.querySelector("#mushroom3").classList.remove("zoom_in");
   document.querySelector("#mushroom3_container").classList.remove("paused");
   document.querySelector("#mushroom3_container").classList.remove("flyingm3");
@@ -220,7 +236,7 @@ function mushroom3Gone() {
 
 
 function mushroom4Gone() {
-  document.querySelector("#mushroom4_container").removeEventListener("animationend", Mushroom4Gone);
+  document.querySelector("#mushroom4_container").removeEventListener("animationend", mushroom4Gone);
   document.querySelector("#mushroom4").classList.remove("zoom_in");
   document.querySelector("#mushroom4_container").classList.remove("paused");
   document.querySelector("#mushroom4_container").classList.remove("flyingm4");
@@ -231,43 +247,43 @@ function mushroom4Gone() {
 
 
 function mushroom5Gone() {
-  document.querySelector("#mushroom5_container").removeEventListener("animationend", Mushroom5Gone);
+  document.querySelector("#mushroom5_container").removeEventListener("animationend", mushroom5Gone);
   document.querySelector("#mushroom5").classList.remove("zoom_in");
   document.querySelector("#mushroom5_container").classList.remove("paused");
   document.querySelector("#mushroom5_container").classList.remove("flyingm5");
   document.querySelector("#mushroom5_container").offsetWidth;
   document.querySelector("#mushroom5_container").classList.add("flyingm5");
-  document.querySelector("#mushroom5_container").addEventListener("click", clickMushroom5);
+  document.querySelector("#mushroom5_container").addEventListener("click", clickmushroom5);
 }
 
 function book1Gone() {
-  document.querySelector("#book1_container").removeEventListener("animationend", Book1Gone);
+  document.querySelector("#book1_container").removeEventListener("animationend", book1Gone);
   document.querySelector("#book1").classList.remove("zoom_out");
   document.querySelector("#book1_container").classList.remove("paused");
   document.querySelector("#book1_container").classList.remove("flyingb1");
   document.querySelector("#book1_container").offsetWidth;
   document.querySelector("#book1_container").classList.add("flyingb1");
-  document.querySelector("#book1_container").addEventListener("click", clickBook1);
+  document.querySelector("#book1_container").addEventListener("click", clickbook1);
 }
 
 function book2Gone() {
-  document.querySelector("#book2_container").removeEventListener("animationend", Book2Gone);
+  document.querySelector("#book2_container").removeEventListener("animationend", book2Gone);
   document.querySelector("#book2").classList.remove("zoom_out");
   document.querySelector("#book2_container").classList.remove("paused");
   document.querySelector("#book2_container").classList.remove("flyingb2");
   document.querySelector("#book2_container").offsetWidth;
   document.querySelector("#book2_container").classList.add("flyingb2");
-  document.querySelector("#book2_container").addEventListener("click", clickBook2);
+  document.querySelector("#book2_container").addEventListener("click", clickbook2);
 }
 
 function book3Gone() {
-  document.querySelector("#book3_container").removeEventListener("animationend", Book3Gone);
+  document.querySelector("#book3_container").removeEventListener("animationend", book3Gone);
   document.querySelector("#book3").classList.remove("zoom_out");
   document.querySelector("#book3_container").classList.remove("paused");
   document.querySelector("#book3_container").classList.remove("flyingb3");
   document.querySelector("#book3_container").offsetWidth;
   document.querySelector("#book3_container").classList.add("flyingb3");
-  document.querySelector("#book3_container").addEventListener("click", clickBook3);
+  document.querySelector("#book3_container").addEventListener("click", clickbook3);
 }
 
 function displaygameOver() {
